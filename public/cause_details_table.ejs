@@ -1,0 +1,498 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link id="pagestyle" href="css/material-dashboard.css?v=3.0.0" rel="stylesheet" />
+</head>
+<body>
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div class="header-top_area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-12 col-lg-8">
+                            <div class="short_contact_list">
+                                <ul>
+                                    <li><a href="#"> <i class="fa fa-phone"></i> +91 7358427230</a></li>
+                                    <li><a href="#"> <i class="fa fa-envelope"></i>Yadavprashant708@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-4">
+                            <div class="social_media_links d-none d-lg-block">
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-pinterest-p"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <!-- <a class="btn btn-outline-success" href="login.html" role="button">login</a>   -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="main-menu">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html">home</a></li>
+                                        <li><a href="About.html">About</a></li>
+                                        <li><a href="blog.html">blog</a></li>
+                                        <li><a href="#">Cause <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="elements.html">elements</a></li>
+                                                <li><a href="Cause.html">Cause</a></li>
+                                                <li><a href="create_cause.html">Create Cause</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="Appointment">
+                                    <div class="book_btn d-none d-lg-block">
+                                        <a data-scroll-nav='1' href="Cause.html">Make a Donate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+    <!-- header-end -->
+    <% include("header") %>
+    <!-- user table start -->
+    <div class="container-fluid py-4">
+        <div class="row">
+          <div class="col-12">
+            <div class="card my-4">
+              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                <div class="bg-gradient-primary  shadow-primary border-radius-lg pt-4 pb-3">
+                  <h6 class="text-white text-capitalize ps-3">HELP US SEND FOOD</h6>
+                </div>
+              </div>
+              <div class="card-body px-0 pb-2">
+                <div class="table-responsive p-0">
+                  <table class="table align-items-center mb-0">
+                    <thead>
+                      <tr>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">USER TYPE</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">EMAIL ID</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Donated amount</th>
+                        <th class="text-secondary opacity-7"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Prashant Yadav</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">Manager</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <p class="text-xs text-secondary mb-0">prashantyadav@gmail.com</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="badge badge-sm bg-gradient-success">2818-rs</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-3.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user2">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Ritika Das</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">founder</p>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <p class="text-xs text-secondary mb-0">boomchikiboom@gmail.com</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="badge badge-sm bg-gradient-success">6969-rs</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-4.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user3">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Ronit asawa</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">User</p>
+                        <td class="align-middle text-center text-sm">
+                          <p class="text-xs text-secondary mb-0">yoyohoneysingh.com</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="badge badge-sm bg-gradient-success">420-rs</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-3.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user4">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Aarushi Gupta</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">User</p>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <p class="text-xs text-secondary mb-0">taylorswift13@1989.com</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="badge badge-sm bg-gradient-success">1609-rs</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user5">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Riya Gothi</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">User</p>
+                        </td>
+                        <!-- <td class="align-middle text-center text-sm">
+                          <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                        </td> -->
+                        <td class="align-middle text-center">
+                          <p class="text-xs text-secondary mb-0">jaiHind@gmail.com</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="badge badge-sm bg-gradient-success">720-rs</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-4.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user6">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Sahil</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">User</p>
+                        </td>
+                        <!-- <td class="align-middle text-center text-sm">
+                          <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                        </td> -->
+                        <td class="align-middle text-center">
+                          <p class="text-xs text-secondary mb-0">richnigga@stocks.com</p>
+                          <td class="align-middle text-center">
+                            <span class="badge badge-sm bg-gradient-success">696969696969-rs</span>
+                          </td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Prashant Yadav</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">Manager</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <p class="text-xs text-secondary mb-0">prashantyadav@gmail.com</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="badge badge-sm bg-gradient-success">2818-rs</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-3.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user2">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Ritika Das</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">founder</p>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <p class="text-xs text-secondary mb-0">boomchikiboom@gmail.com</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="badge badge-sm bg-gradient-success">6969-rs</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-4.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user3">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Ronit asawa</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">User</p>
+                        <td class="align-middle text-center text-sm">
+                          <p class="text-xs text-secondary mb-0">yoyohoneysingh.com</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="badge badge-sm bg-gradient-success">420-rs</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Prashant Yadav</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">Manager</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <p class="text-xs text-secondary mb-0">prashantyadav@gmail.com</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="badge badge-sm bg-gradient-success">2818-rs</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-3.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user2">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Ritika Das</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">founder</p>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <p class="text-xs text-secondary mb-0">boomchikiboom@gmail.com</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="badge badge-sm bg-gradient-success">6969-rs</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="img/users/team-4.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user3">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">Ronit asawa</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">User</p>
+                        <td class="align-middle text-center text-sm">
+                          <p class="text-xs text-secondary mb-0">yoyohoneysingh.com</p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="badge badge-sm bg-gradient-success">420-rs</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- user table end -->
+    
+         <!-- footer_start  -->
+    <footer class="footer">
+        <div class="footer_top" style="margin-left: 380px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-lg-4 ">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="#">
+                                    <img src="img/footer_logo.png" alt="">
+                                </a>
+                            </div>
+                            <p class="address_text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore.
+                            </p>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-dribbble"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Services
+                            </h3>
+                            <ul class="links">
+                                <li><a href="#">Donate</a></li>
+                                <li><a href="#">Sponsor</a></li>
+                                <li><a href="#">Fundraise</a></li>
+                                <li><a href="#">Volunteer</a></li>
+                                <li><a href="#">Partner</a></li>
+                                <li><a href="#">Jobs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Contacts
+                            </h3>
+                            <div class="contacts">
+                                <p>+91 7358427230 <br>
+                                    infocharity.com <br>
+                                    3rd floor dayananda sagar academy of technology and management
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer_end  -->
+    
+
+    <!-- link that opens popup -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

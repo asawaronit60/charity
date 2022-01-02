@@ -46,7 +46,7 @@ exports.getCause = async (req, res) => {
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './public/img/cause')
+    cb(null, './public/img/causes')
   },
   filename: function (req, file, cb) {
     const uniqueSuffix = Date.now()
@@ -59,11 +59,11 @@ exports.upload = multer({ storage: storage }).single('causeImage')
 exports.createCause = async (req, res) => {
 
   try {
-    let { cause_name, cause_description } = req.body
+    let { cause_name, cause_description,cause_goal } = req.body
     let image = req.file.filename
     let data = await pool.query(`
-      INSERT INTO causes (cause_name, cause_description,cause_image ) VALUES($1,$2,$3) returning *;`,
-      [cause_name, cause_description, image],
+      INSERT INTO causes (cause_name, cause_description,cause_image,goal ) VALUES($1,$2,$3,$4) returning *;`,
+      [cause_name, cause_description, image,cause_goal],
     )
 
     res.status(200).json({
